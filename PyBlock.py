@@ -1,32 +1,24 @@
-import tkinter as tk
 import pygame
-import pygame.draw
 
-def main():
-    pygame.init()
+ScreenSize= 640,480
 
-    screen = pygame.display.set_mode((640, 480))
-    pygame.display.set_caption('PyBlock')
-    screen.fill((0, 0, 0))
+class PyBlock:
 
-    s = pygame.Surface(screen.get_size(), pygame.SRCALPHA, 32)
+    def __init__(self):
+        pygame.init()
+        
+        self.screen = pygame.display.set_mode(ScreenSize)
+        pygame.display.set_caption("PyBlock")
+        
+        self.clock = pygame.time.Clock()
 
-    pygame.draw.circle(s, (255, 255, 255, 255), (100, 100), 5)
+        if pygame.font:
+            self.font = pygame.font.Font(None,30)
+        else:
+            self.font = None
 
-    screen.blit(s, (0, 0))
-    pygame.display.flip()
-
-    try:
-        while True:
-            event = pygame.event.wait()
-            if event.type == pygame.QUIT:
-                break
-            if event.type == pygame.KEYDOWN:
-                if event.key == pygame.K_ESCAPE or event.unicode == 'q':
-                    break
-            pygame.display.flip()
-    finally:
-        pygame.quit()
-
-if __name__ == '__main__':
-    main()
+try:
+    if __name__ == "__main__":
+        PyBlock().run()
+except:
+    print("PyBlock has quit successfully! Thanks for playing!")
