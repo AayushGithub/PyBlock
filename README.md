@@ -1,2 +1,2 @@
 # PyBlock
- A python-based game to replicate physical particle based interactions
+ A python-based game to replicate physics based interactions in the game Brick Breaker
