@@ -1,14 +1,14 @@
 # PyBlock
  A python-based game to replicate physics based interactions in the game Brick Breaker
  
- ![](/screenshots/game_init.png)
+ ![Game Initialisation](/screenshots/game_init.png "Game Initialisation")
  
  ## Game Initialisation ^
  
- ![](/screenshots/game_running.png)
+ ![Game Running](/screenshots/game_running.png "Game Running")
   
 ## Game Running ^
 
- ![](/screenshots/game_end.png)
+ ![Game Over](/screenshots/game_end.png "Game Over")
  
  ## Game Over ^
